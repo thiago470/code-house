@@ -35,21 +35,24 @@ header nav ul li a{
 /*!--------MAIN---------*/
 
 
-.cocinemos{
-    text-align: center;
+.cocinemos {
+    text-align: left;
     width: 100%;
     height: 400px;
     background-image: url(../img/fondonuevo.webp);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     object-fit: cover;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;      /* mantiene centrado vertical */
+    align-items: flex-start;      /* 👈 ahora los hijos respetan el margin-left */
+    padding-left: 50px;           /* opcional: margen interno general */
 }
+
 .cocinemos h1{
     font-size: 60px;
     border: 2px solid white;
@@ -58,22 +61,27 @@ header nav ul li a{
     padding: 20px;
     margin-bottom: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        align-self: flex-start;  /* se sale de la alineación general */
+    margin-left: 50px;
 }
 
-.cocinemos h2{
-    color: antiquewhite;
+.presentacion h2{
+    color: black;
     font-size: 20px;
     margin: 15px;
 }
 
-.cocinemos a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    background-color: black;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
+.presentacion img{ 
+    width: 400px;
+    height: 500px;
+
+
+}
+
+.presentacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
@@ -107,12 +115,19 @@ header nav ul li a{
 }
 
 .destacados h2{
-    text-align: center;
-    font-size: 35px;
+    text-decoration: none;
     color: white;
+    font-size: 25px;
     background-color: black;
-    margin: 10px;
     padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.empanadas h2{
+    margin: 5px;
+
 }
 
 /*!--------FOOTER---------*/

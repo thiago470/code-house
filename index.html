@@ -5,57 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>COOKIDEAS</title>
 </head>
+<!--ENCABEZADO Y BARRA DE NAVEGACION-->
 
 <body>
-    <header> <!--ENCABEZADO Y BARRA DE NAVEGACION-->
-        <img src="./img/logo.png" alt="">
-        <nav>
-            <ul><!--lista desorndenada-->
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <!--van otros nombres mas especificos sobre distintos tipos de recetas (dulce, salado)-->
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png"  alt="Cookideas Logo" width="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">COOKIDEAS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    MAS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./pages/productos.html">PRODUCTOS</a></li>
+                                    <li><a class="dropdown-item" href="./pages/recetas.html">RECETAS</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Otro enlace</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <!--primera seccion-->
-        <section class="cocinemos">
-            <img src="" alt="">
-            <h1>COOKIDEAS</h1>
-        </section>
-        
-        <!--segunda seccion-->
-        <section class="presentacion">
-            <div>
+    <!--primera seccion-->
+    <section class="cocinemos">
+        <img src="" alt="">
+        <h1>COOKIDEAS</h1>
+    </section>
+
+    <!--segunda seccion-->
+    <section class="presentacion">
+        <div>
             <h2>Cocinar alimenta el alma </h2>
             <p>Una Pagina hecha con amor para aquellos amantes de la cocina</p>
-            </div>
-            <img src="./img/segundo titulo.jpg" alt="">
-        </section>
-        
-        <section class="destacados">
+        </div>
+        <img src="./img/segundo titulo.jpg" alt="">
+    </section>
+
+    <section class="destacados">
         <h2> RECETAS MAS VISTAS</h2>
-        <div class="locro">
-            <img src="img/locro2.webp" alt="">
-            <h3>LOCRO</h3>
-            <a href="">RECETA</a>
+        <div class="separador-contenedor">
+            <div class="locro">
+                <img src="img/locro2.webp" alt="">
+                <h3>LOCRO</h3>
+                <a href="">RECETA</a>
+            </div>
+            <div class="empanadas">
+                <img src="./img/empanadas.webp" alt="">
+                <h3>EMPANADAS AL DISCO</h3>
+                <a href="">RECETA</a>
+            </div>
         </div>
-        <section>
-        <div  class="empanadas">
-            <img src="./img/empanadas.webp" alt="">
-            <h2>EMPANADAS AL DISCO</h2>
-            <a href="">RECETA</a>
-        </div>
-        
+    </section>
     </main>
 </body>
 <footer>
-<img src="./img/instragram.jpg" alt="">
-<img src="./img/wsp.jpg" alt="">
-<img src="./img/twitter.jpg" alt="">
+    
+
 </footer>
 
-</html><a href="">SUMATE</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

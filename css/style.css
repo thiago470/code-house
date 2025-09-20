@@ -8,7 +8,27 @@
 
 /*!--------HEADER INDEX---------*/
 
-header img{
+.navbar-brand img{
+    height: 120px;
+    width: 120px;
+}
+
+.container-fluid{
+    background-color: black;
+    text-decoration: white;
+}
+
+.offcanvas-header{
+    background-color: black;
+    text-decoration: white;
+}
+
+.offcanvas-body{
+    background-color: black;
+    text-decoration: white;
+}
+
+/*header img{
     height: 120px;
 }
 
@@ -39,7 +59,7 @@ header nav ul li a{
     text-align: left;
     width: 100%;
     height: 400px;
-    background-image: url(../img/fondonuevo.webp);
+    background-image: url(../img/fondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,20 +68,20 @@ header nav ul li a{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;      /* mantiene centrado vertical */
-    align-items: flex-start;      /* 👈 ahora los hijos respetan el margin-left */
-    padding-left: 50px;           /* opcional: margen interno general */
+    justify-content: center;      
+    align-items: flex-start;     
+    padding-left: 50px;           
 }
 
 .cocinemos h1{
     font-size: 60px;
-    border: 2px solid white;
+    border-bottom: 2px solid white;
     display: inline-block;
     color: white;
     padding: 20px;
     margin-bottom: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        align-self: flex-start;  /* se sale de la alineación general */
+    align-self: flex-start; 
     margin-left: 50px;
 }
 
@@ -87,17 +107,24 @@ header nav ul li a{
 
 /*----seccion de destacados imagenes y galeria----*/
 
-.destacados div{
+.separador-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.destacados .separador-contenedor div{
     border: 1px solid grey;
     width: 250px;
-    height: 320px;
+    height: 280px;
     margin: 15px;
     text-align: center
 }
 
 .destacados div img{
     width: 250px;
-    height: 250px;
+    height: 200px;
 }
 
 .destacados div a{
@@ -112,6 +139,8 @@ header nav ul li a{
 
 .destacados div h3{
     margin: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
 }
 
 .destacados h2{
@@ -132,15 +161,100 @@ header nav ul li a{
 
 /*!--------FOOTER---------*/
 
-footer img{
-    height: 30px;
-    
+footer{
+    background-color: black;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    object-fit: fill;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
 }
 
 
-/*!--------PRODUCTOS---------*/
+/*!--------PRODUCTOS PG2---------*/
 
+.custom-carousel {
+  max-width: 800px;
+  margin: auto;
+}
 
-.tipicas{
-    color: brown;
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.productos img{ 
+    width: 400px;
+    height: 500px;
+}
+
+.productos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productos div a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.productos iframe{
+    width: 560px;
+    height: 315px;
+    margin: 20px;
+} 
+
+/*---------- MEDIA-----------*/
+
+@media screen and (max-width:560px) {
+    header{
+        flex-direction:column;
+
+    }
+    
+    header img{
+        height: 100px;
+        width: 100px;
+        align-items: center;
+    }
+
+    .cocinemos h1{
+    font-size: 30px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: flex-start; 
+    margin-left: 25px;
+}
+
+.presentacion img{
+    display: none;
+}
+
+.presentacion h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.presentacion p{
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
 }

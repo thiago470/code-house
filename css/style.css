@@ -141,6 +141,12 @@ footer{
 
 /*!--------PRODUCTOS PG2---------*/
 
+.pg2 img{
+    border: solid 2px grey;
+    object-fit: contain;
+    width: 100%;
+}
+
 .custom-carousel{
   max-width: 800px;
   margin: auto;

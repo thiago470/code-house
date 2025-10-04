@@ -1,0 +1,271 @@
+/*boostraps barra de navegacion*/
+.navbar-brand img {
+  height: 120px;
+  width: 120px;
+}
+
+.container-fluid {
+  background-color: black;
+  text-decoration: white;
+}
+
+.offcanvas-header {
+  background-color: black;
+  text-decoration: white;
+}
+
+.offcanvas-body {
+  background-color: black;
+  text-decoration: white;
+}
+
+#offcanvasNavbarLabel {
+  color: white;
+}
+
+/*boostraps pag productos*/
+.custom-carousel {
+  max-width: 800px;
+  margin: auto;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* INDEX */
+.cocinemos {
+  text-align: left;
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+.cocinemos h1 {
+  font-size: 60px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  align-self: flex-start;
+  margin-left: 50px;
+}
+
+.presentacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.presentacion div h2 {
+  color: black;
+  font-size: 20px;
+  margin: 15px;
+}
+.presentacion img {
+  width: 400px;
+  height: 500px;
+  margin-top: 5px;
+}
+
+.destacados h2 {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  background-color: black;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.grid-galeria {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px;
+  gap: 30px;
+  padding: 0 50px;
+  margin-bottom: 20px;
+}
+.grid-galeria .grid-item {
+  position: relative;
+}
+.grid-galeria .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid-galeria .grid-item h3 {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.466);
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  width: 100%;
+  height: 150px;
+}
+
+/* PAGINA DE PRODUCTOS*/
+.destacados {
+  padding: 0 50px;
+}
+.destacados .separador-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+.destacados .pg2 {
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+}
+.destacados .pg2 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.destacados .pg2 h3 {
+  font-size: 25px;
+}
+.destacados .pg2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.destacados img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.productos iframe {
+  width: 560px;
+  height: 315px;
+  margin: 20px;
+}
+.productos iframe img {
+  width: 400px;
+  height: 500px;
+}
+.productos div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  padding: 5px;
+  margin-top: 2px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+/* pag 3 contactos*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto {
+  background: whitesmoke;
+  padding: 60px 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-image: url(../img/fondo\ contacto.webp);
+}
+.contacto h2 {
+  font-size: 80px;
+  border-bottom: 5px solid white;
+  color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  align-self: center;
+  margin-bottom: 250px;
+}
+.contacto .contenedor {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contacto .contenedor .formulario {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  width: 500px;
+  max-width: 100%;
+}
+.contacto .contenedor .formulario input,
+.contacto .contenedor .formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #f2f2f2;
+  font-size: 15px;
+  outline: none;
+  transition: background 0.3s;
+}
+.contacto .contenedor .formulario input:focus,
+.contacto .contenedor .formulario textarea:focus {
+  background: #e8e8e8;
+}
+.contacto .contenedor .formulario button {
+  width: 100%;
+  padding: 12px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+.contacto .contenedor .formulario button:hover {
+  background: #111;
+}
+
+/*# sourceMappingURL=estilos.css.map */

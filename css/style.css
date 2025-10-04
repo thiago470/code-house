@@ -1,5 +1,5 @@
 /*!--------RESET---------*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,27 +8,27 @@
 
 /*!--------HEADER INDEX---------*/
 
-.navbar-brand img{
+.navbar-brand img {
     height: 120px;
     width: 120px;
 }
 
-.container-fluid{
+.container-fluid {
     background-color: black;
     text-decoration: white;
 }
 
-.offcanvas-header{
+.offcanvas-header {
     background-color: black;
     text-decoration: white;
 }
 
-.offcanvas-body{
+.offcanvas-body {
     background-color: black;
     text-decoration: white;
 }
 
-#offcanvasNavbarLabel{
+#offcanvasNavbarLabel {
     color: white;
 }
 
@@ -48,12 +48,12 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;      
-    align-items: flex-start;     
-    padding-left: 50px;           
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
 }
 
-.cocinemos h1{
+.cocinemos h1 {
     font-size: 60px;
     border-bottom: 2px solid white;
     display: inline-block;
@@ -61,23 +61,23 @@
     padding: 20px;
     margin-bottom: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    align-self: flex-start; 
+    align-self: flex-start;
     margin-left: 50px;
 }
 
-.presentacion h2{
+.presentacion h2 {
     color: black;
     font-size: 20px;
     margin: 15px;
 }
 
-.presentacion img{ 
+.presentacion img {
     width: 400px;
     height: 500px;
     margin-top: 5px;
 }
 
-.presentacion{
+.presentacion {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -86,7 +86,7 @@
 
 /*----seccion de destacados imagenes y galeria----*/
 
-.destacados h2{
+.destacados h2 {
     text-decoration: none;
     color: white;
     font-size: 25px;
@@ -98,27 +98,28 @@
     text-align: center;
 }
 
-.grid-galeria{
+.grid-galeria {
     margin: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 250px;
     gap: 30px;
     padding: 0 50px;
+    margin-bottom: 20px;
 }
 
-.grid-galeria div img{
+.grid-galeria div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 
 }
 
-.grid-item{
+.grid-item {
     position: relative;
 }
 
-.grid-item h3{
+.grid-item h3 {
     position: absolute;
     bottom: 0;
     color: white;
@@ -126,49 +127,48 @@
     padding: 5px;
     width: 100%;
     text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*!--------FOOTER---------*/
 
-footer{
+footer {
     background-color: black;
     width: 100%;
     height: 150px;
-    margin-top: 20px;
 }
 
 
-/*!--------PRODUCTOS PG2---------*/
+/*!--------PRODUCTOS PAG2---------*/
 
-.pg2 img{
+.pg2 img {
     border: solid 2px grey;
     object-fit: contain;
     width: 100%;
 }
 
-.custom-carousel{
-  max-width: 800px;
-  margin: auto;
+.custom-carousel {
+    max-width: 800px;
+    margin: auto;
 }
 
 .carousel-item img {
-  height: 400px;
-  object-fit: cover;
+    height: 400px;
+    object-fit: cover;
 }
 
-.productos img{ 
+.productos img {
     width: 400px;
     height: 500px;
 }
 
-.productos{
+.productos {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.productos div a{
+.productos div a {
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -181,17 +181,17 @@ footer{
     justify-content: center;
 }
 
-.productos iframe{
+.productos iframe {
     width: 560px;
     height: 315px;
     margin: 20px;
-} 
+}
 
 
 .separador-contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px; 
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -210,7 +210,7 @@ footer{
 }
 
 
-.destacados div a{
+.destacados div a {
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -222,14 +222,100 @@ footer{
     display: inline-block;
 }
 
-.destacados{
+.destacados {
     padding: 0 50px;
 }
 
-.destacados div h3{
+.destacados div h3 {
     font-size: 25px;
 }
 
+
+/*---------- CONTACTO PAG3-----------*/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contacto {
+    background: whitesmoke;
+    padding: 60px 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-image: url(../img/fondo\ contacto.webp);
+}
+
+.contacto .contenedor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.formulario {
+    background: #ffffffcc;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    width: 650px;
+    max-width: 100%;
+    height: 400px;
+
+}
+
+.contacto h2{
+    font-size: 80px;
+    border-bottom: 5px solid white;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: center;
+    margin-bottom: 250px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #f2f2f2;
+    font-size: 15px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    background: #e8e8e8;
+}
+
+/* Botón de enviar */
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    /* oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.formulario button:hover {
+    background: #111;
+}
 
 
 
@@ -237,51 +323,51 @@ footer{
 /*---------- MEDIA-----------*/
 
 @media screen and (max-width:560px) {
-    header{
-        flex-direction:column;
+    header {
+        flex-direction: column;
 
     }
-    
-    header img{
+
+    header img {
         height: 100px;
         width: 100px;
         align-items: center;
     }
 
-    .cocinemos h1{
-    font-size: 30px;
-    border-bottom: 2px solid white;
-    display: inline-block;
-    color: white;
-    padding: 20px;
-    margin-bottom: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    align-self: flex-start; 
-    margin-left: 25px;
-}
+    .cocinemos h1 {
+        font-size: 30px;
+        border-bottom: 2px solid white;
+        display: inline-block;
+        color: white;
+        padding: 20px;
+        margin-bottom: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        align-self: flex-start;
+        margin-left: 25px;
+    }
 
-.presentacion img{
-    display: none;
-}
+    .presentacion img {
+        display: none;
+    }
 
-.presentacion h2{
-    text-align: center;
-    font-weight: bold;
-}
+    .presentacion h2 {
+        text-align: center;
+        font-weight: bold;
+    }
 
-.presentacion p{
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-}
+    .presentacion p {
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+    }
 
-.grid-galeria{
-    grid-template-columns: 1fr;
-}
+    .grid-galeria {
+        grid-template-columns: 1fr;
+    }
 
-.grid-galeria div img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
+    .grid-galeria div img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
 }

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thiago470/code-house/issues"
   },
-  "homepage": "https://github.com/thiago470/code-house#readme"
+  "homepage": "https://github.com/thiago470/code-house#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1"
+  }
 }

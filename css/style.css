@@ -332,6 +332,75 @@ body {
 .formulario button:hover {
     background: #111;
 }
+/*---------- RECETAS-----------*/
+
+
+.recetas {
+  background-color: #fff8f0;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.titulo-seccion {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.contenedor-recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.receta {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.receta:hover {
+  transform: translateY(-5px);
+}
+.receta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.receta h3 {
+  color: black;
+  margin: 15px 0 10px;
+}
+.receta p {
+  color: #555;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.receta ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+.receta ul li {
+  font-size: 0.9rem;
+  color: #6a6a6a;
+}
+.btn-receta {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  transition: background 0.3s;
+}
+.btn-receta:hover {
+  background-color: #d46b51;
+}
+
 
 
 

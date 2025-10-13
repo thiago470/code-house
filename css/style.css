@@ -402,7 +402,47 @@ body {
 }
 
 
+/*---------- SOBRE NOSOTROS -----------*/
 
+.sobre-nosotros {
+  padding: 60px 10%;
+  background-color: #fffaf5;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../);
+}
+
+.contenedor-sobre {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: 40px;
+}
+
+.imagen-sobre img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.texto-sobre h2 {
+  font-size: 2.2rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.texto-sobre h3 {
+  font-size: 1.3rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.texto-sobre p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
 
 
 /*---------- MEDIA-----------*/

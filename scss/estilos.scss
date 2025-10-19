@@ -222,6 +222,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 30px;
 
     iframe {
         width: 560px;
@@ -263,10 +264,11 @@ body {
 
 .contacto {
     background: whitesmoke;
-    padding: 60px 20px;
+    padding: 10px 10px ;
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -290,11 +292,13 @@ body {
 
         .formulario {
             background: #ffffffcc;
-            padding: 25px;
+            padding: 15px;
             border-radius: 12px;
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-            width: 500px;
+            width: 650px;
             max-width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
 
             input,
             textarea {

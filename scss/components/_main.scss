@@ -1,0 +1,98 @@
+.cocinemos {
+
+    text-align: left;
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+
+    flex-direction: column;
+    padding-left: 50px;
+    @include flex (flex,center,flex-start);
+
+    h1 {
+        font-size: 60px;
+        border-bottom: 2px solid $color-secundario;
+        display: inline-block;
+        color: white;
+        padding: 20px;
+        margin-bottom: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        align-self: flex-start;
+        margin-left: 50px;
+    }
+}
+
+.presentacion {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    div {
+        h2 {
+            color: $color-principal;
+            font-size: 20px;
+            margin: 15px;
+        }
+    }
+
+    img {
+        width: 400px;
+        height: 500px;
+        margin-top: 5px;
+    }
+
+}
+
+
+.destacados {
+
+    h2 {
+        text-decoration: none;
+        color: $color-secundario;
+        font-size: 25px;
+        background-color: $color-principal;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+}
+
+.grid-galeria {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px;
+    gap: 30px;
+    padding: 0 50px;
+    margin-bottom: 20px;
+
+    .grid-item {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 0;
+            color: $color-secundario;
+            background-color: rgba(0, 0, 0, 0.466);
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+
+}

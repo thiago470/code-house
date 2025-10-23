@@ -59,17 +59,20 @@
 
 .container-fluid {
   background-color: black;
-  text-decoration: white;
+  -webkit-text-decoration: white;
+          text-decoration: white;
 }
 
 .offcanvas-header {
   background-color: black;
-  text-decoration: white;
+  -webkit-text-decoration: white;
+          text-decoration: white;
 }
 
 .offcanvas-body {
   background-color: black;
-  text-decoration: white;
+  -webkit-text-decoration: white;
+          text-decoration: white;
 }
 
 #offcanvasNavbarLabel {
@@ -85,7 +88,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   flex-direction: column;
   padding-left: 50px;
   display: flex;
@@ -147,7 +151,8 @@
 .grid-galeria .grid-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .grid-galeria .grid-item h3 {
   position: absolute;
@@ -268,8 +273,10 @@ body {
 .recetas .contenedor-recetas .receta img {
   width: 100%;
   height: 220px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   display: block;
   margin: 0 auto;
 }
@@ -313,7 +320,8 @@ body {
 
 .carousel-item img {
   height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .destacados {
@@ -334,7 +342,8 @@ body {
 .destacados .pg2 img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 .destacados .pg2 h3 {
@@ -343,7 +352,8 @@ body {
 .destacados img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 
@@ -395,7 +405,8 @@ body {
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0 auto;
 }
 .sobre-nosotros .contenedor-sobre .texto-sobre h1 {
@@ -455,7 +466,8 @@ body {
   .grid-galeria div img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (max-width: 523px) {
@@ -552,6 +564,4 @@ body {
   .titulo-seccion {
     font-size: 29px;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

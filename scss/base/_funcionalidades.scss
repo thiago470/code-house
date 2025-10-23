@@ -1,0 +1,33 @@
+// VARIABLES
+
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: green;
+
+// LISTAS 
+
+$colores: blue, red, grey, orange;
+
+
+// EXTEND
+
+%boton {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+//MIXIN
+
+@mixin flex($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

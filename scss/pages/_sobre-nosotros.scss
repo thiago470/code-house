@@ -1,0 +1,50 @@
+.sobre-nosotros {
+    background-color: #fff8f0;
+    padding: 60px 10%;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 10%;
+    box-sizing: content-box;
+
+    .contenedor-sobre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+        margin-top: 95px;
+        margin-bottom: 95px;
+
+        .imagen-sobre {
+            img {
+                height: auto;
+                width: 100%;
+                border-radius: 20px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                object-fit: cover;
+                margin: 0 auto;
+            }
+        }
+
+        .texto-sobre h1 {
+            font-size: 35px;
+            color: black;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .texto-sobre h2 {
+            font-size: 20px;
+            color: black;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .texto-sobre p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+    }
+}
